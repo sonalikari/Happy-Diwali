@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+*{
+    font-family:'Zen kurenaido', sans-serif;
+}
+body{
+    margin:0px;
+}
+#container{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background-color:rgb(163, 41, 61);
+    background-position: fixed;
+}
+h1{
+    color:#cd723e;
+    font-size:50px;
+    font-style: italic;
+}
+#light{
+    height:100px;
+    width:50px;
+    background-color:yellow;
+    filter:blur(7px);
+    border-bottom-left-radius:200px;
+    border-top-right-radius:200px;
+    transform:rotate(25deg);
+    animation-name:diyalightanim;
+    animation-iteration-count:infinite;
+    animation-duration:7s;
+}
+@keyframes diyalightanim{
+    25%{
+margin-left:-3px;
+    }
+    50%{
+opacity:0.7;
+    }
+    75%{
+margin-right:-3px;
+    }
+    90%{
+margin-left:0;
+margin-right:0;
+    }
+    100%{
+opacity:1.5;
+    }
+}
+#light-in{
+    height:80px;
+    width:35px;
+    background-color:gold;
+    border-bottom-left-radius:200px;
+    border-top-right-radius:200px;
+}
+#diya{
+    height:100px;
+    width:200px;
+    background:brown;
+    border-radius:0 0 100px 100px;
+    background-color:#cd723e;
+    background-image:radial-gradient(brown 9px, transparent 10px),
+    repeating-radial-gradient(brown 0,brown 4px,transparent 5px,
+    transparent 20px, brown 21px,brown 25px,transparent 26px,transparent 50px);
+    background-size:30px 30px, 90px 90px;
+    background-position:0 0;
+    border:3px solid brown;
+}
+#diya-cont{
+    height: auto;
+    width: auto;
+    transform: scale(1.1);
+}
+h2{
+    color:#cd723e;
+    font-size:30px;
+    text-align: center;
+    font-style: italic;
+}
+.gif{
+    align-items: center;
+    margin-right: 40px;
+}
